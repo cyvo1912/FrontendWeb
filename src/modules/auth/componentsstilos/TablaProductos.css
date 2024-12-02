@@ -1,0 +1,82 @@
+.div-container{
+    margin-top: 170px;
+}
+
+.table-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .table-products li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .table-products li:hover {
+    transform: scale(1.05);
+  }
+  
+  .content-img {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Altura fija para que las imágenes sean uniformes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+  }
+  
+  .content-img button {
+    position: absolute;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color:color;
+    color:black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .content-img button:hover {
+    background-color:grey;
+  }
+  
+  .content-info {
+    padding: 10px 15px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+  }
+  
+  .content-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 5px;
+  }
+  
+  .content-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
